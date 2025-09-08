@@ -28,9 +28,10 @@ OFFSPRING_SIZE = 25
 NUM_GENERATIONS_BODY = 12 # No. of body optimization generations
 
 # Differential Evolution parameters
-NUM_SIMULATORS_BRAIN = 12
+NUM_SIMULATORS_BRAIN = 20 # Directly controls the threaded environment for simulation, should be double num_pop_brain
 NUM_GENERATIONS_BRAIN = 10
-NUM_POPULATION_BRAIN = 12
+NUM_POPULATION_BRAIN = 10 # This value is doubled for threaded cpu count MODIFY ME FOR MORE JUICE
+# 12 target vectors and 12 candidate vectors ^^^
 PERTURB_SD_MOD = 2
 P_CR = 0.7 # [0,1]
 P_MU = 0.5 # [0,1]
